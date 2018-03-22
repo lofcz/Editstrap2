@@ -1,0 +1,351 @@
+
+.editable-field{
+	overflow: hidden;
+    /*padding: 0;*/
+    position: static;
+    width: auto;
+    display: table-cell;
+ 
+}
+.edit-parent-span-hover{
+	
+	border: 1px solid #ccc;
+	background-color: #fff;
+	word-wrap: break-word;
+    word-break: break-word;
+    display: table;
+    max-width: 100%;
+    position: relative;
+    border-radius: 2.01px;
+    cursor: text;
+    box-shadow: 0 0 0 0 transparent;
+    /*opacity: 0.7;*/
+    
+    /*padding: 2px 30px 2px 5px;*/
+}
+.multiple-edit-span{
+	display: table-cell;
+}
+
+.edit-parent-span{
+	border: 1px solid transparent;
+	word-wrap: break-word;
+    word-break: break-word;
+    display: table;
+    max-width: 100%;
+    position: relative;
+    border-radius: 2.01px;
+    cursor: text;
+    box-shadow: 0 0 0 0 transparent;
+    
+   /* padding: 2px 30px 2px 5px;*/
+}
+.edit-form{
+    margin: -2px -30px -2px -5px;
+    width: 100%;
+}
+.validate{
+	cursor: pointer;
+}
+.form-active{
+	clear:left;
+	    word-wrap: break-word;
+    word-break: break-word;
+    overflow:inherit;
+    max-width: 100%;
+    padding-bottom: 2px;
+    padding-left: 5px;
+    padding-top: 2px;
+    position: relative;
+    vertical-align: top;
+     background-color: #fff;
+    display: block !important;
+    box-shadow: 0 0 0 0 transparent;
+}
+.edit-icon-container{
+        box-sizing: border-box;
+    opacity: 0;
+    background-color: #f0f0f0;
+    background-repeat: no-repeat;
+    background-position: 4px 4px;
+    border-left: 1px solid #ccc;
+    /* bottom: 0; */
+    /* padding: 2px; */
+    /* height: auto; */
+    /* margin: 0; */
+    /* padding-top: 3px; */
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    /* position: absolute; */
+    /* right: 0; */
+    /* top: -1; */
+    width: 24px;
+    display: table-cell;
+}
+
+.edit-validate-default{
+  color: #707070;
+  background-color: #eeeeee;
+  border-color: #cccccc;
+}
+.edit-cancel-default{
+  color: #707070;
+  /*background-color: #cccccc;;*/
+  border-color: #cccccc;
+}
+.edit-validate-primary{
+  color: #ffffff;
+  background-color: #428bca;
+  border-color: #357ebd;
+}
+.edit-validate-warning {
+  color: #ffffff;
+  background-color: #f0ad4e;
+  border-color: #eea236;
+}
+.edit-validate-success {
+  color: #ffffff;
+  background-color: #5cb85c;
+  border-color: #4cae4c;
+}
+.edit-validate-danger {
+  color: #ffffff;
+  background-color: #d9534f;
+  border-color: #d43f3a;
+}
+.edit-pointer{
+cursor:pointer;
+
+}
+
+.select2-container.form-control {
+  background: transparent;
+  box-shadow: none;
+  border: none;
+  display: block;
+  /* 1 */
+  margin: 0;
+  padding: 0;
+}
+
+
+/**
+ * Select2 widgets in Bootstrap Input Groups
+ *
+ * When Select2 widgets are combined with other elements using Bootstrap 3's
+ * "Input Group" component, we don't want specific edges of the Select2 container
+ * to have a border-radius.
+ *
+ * In Bootstrap 2, input groups required a markup where these style adjustments
+ * could be bound to a CSS-class identifying if the additional elements are appended,
+ * prepended or both.
+ *
+ * Bootstrap 3 doesn't rely on these classes anymore, so we have to use our own.
+ * Use .select2-bootstrap-prepend and .select2-bootstrap-append on a Bootstrap 3 .input-group
+ * to let the contained Select2 widget know which edges should not be rounded as they are
+ * directly followed by another element.
+ *
+ * @see http://getbootstrap.com/components/#input-groups
+ */
+.input-group.select2-bootstrap-prepend [class^="select2-selection"] {
+  border-bottom-left-radius: 0 !important;
+  border-top-left-radius: 0 !important;
+}
+
+.input-group.select2-bootstrap-append [class^="select2-selection"] {
+  border-bottom-right-radius: 0 !important;
+  border-top-right-radius: 0 !important;
+}
+
+.form-control-feedback {
+    position: absolute;
+    top: 10;
+    right: 10;
+    z-index: 2;
+    display: block;
+    width: 34px;
+    height: 34px;
+    line-height: 34px;
+    text-align: center;
+    pointer-events: none;
+}
+.edit-has-error{
+    color: #a94442;
+}
+.edit-has-success{
+    color: #468847;
+}
+.result-message{
+	display: none;
+}
+.tt-query {
+   margin-bottom: 0;
+}
+.tt-hint:{
+	display: none;
+}
+
+.tt-menu {
+min-width: 160px;
+  margin-top: 2px;
+  padding: 5px 0;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border: 1px solid rgba(0,0,0,.2);
+  *border-right-width: 2px;
+  *border-bottom-width: 2px;
+  -webkit-border-radius: 6px;
+     -moz-border-radius: 6px;
+          border-radius: 6px;
+  -webkit-box-shadow: 0 5px 10px rgba(0,0,0,.2);
+     -moz-box-shadow: 0 5px 10px rgba(0,0,0,.2);
+          box-shadow: 0 5px 10px rgba(0,0,0,.2);
+  -webkit-background-clip: padding-box;
+     -moz-background-clip: padding;
+          background-clip: padding-box;
+}
+
+.tt-suggestion {
+  display: block;
+  padding: 3px 20px;
+}
+
+.tt-suggestion:hover {
+  cursor: pointer;
+  color: #fff;
+  background-color: #0097cf;
+}
+
+.tt-suggestion.tt-cursor {
+  color: #fff;
+  background-color: #0097cf;
+
+}
+
+.tt-suggestion p {
+  margin: 0;
+}
+
+.gist {
+  font-size: 14px;
+}
+.gly-spin {
+  -webkit-animation: spin 2s infinite linear;
+  -moz-animation: spin 2s infinite linear;
+  -o-animation: spin 2s infinite linear;
+  animation: spin 2s infinite linear;
+}
+@-moz-keyframes spin {
+  0% {
+    -moz-transform: rotate(0deg);
+  }
+  100% {
+    -moz-transform: rotate(359deg);
+  }
+}
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+  }
+}
+@-o-keyframes spin {
+  0% {
+    -o-transform: rotate(0deg);
+  }
+  100% {
+    -o-transform: rotate(359deg);
+  }
+}
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+
+
+
+.input-group-btn-vertical {
+  position: relative;
+  white-space: nowrap;
+  width: 2%;
+  vertical-align: middle;
+  display: table-cell;
+}
+
+.input-group-btn-vertical > .btn {
+  display: block;
+  float: none;
+  width: 100%;
+  max-width: 100%;
+  padding: 7px 7px 6px 7px;
+  margin-left: -1px;
+  position: relative;
+  border-radius: 0;
+}
+
+
+
+.input-group-btn-vertical i {
+  position: absolute;
+  top: 0;
+  left: 4px;
+}
+
+
+
+.custom-bold-hover{
+	font-weight: bold;
+}
+.custom-red-hover{
+	color: red;
+}
+.prepend-example{
+	color: #fff;
+	background-color: #468847;
+	border-color: #468847;
+}
+.append-example{
+	color: #fff;
+	background-color: #a94442;
+	border-color: #a94442;
+}
+
+.save-options{
+	background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-top: none;
+    border-radius: 0 0 3px 3px;
+    box-shadow: 0 3px 6px rgba(111,111,111,0.2);
+    outline: none;
+    padding: 3px;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    z-index: 1;
+}
+.save-options button{
+	box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 3.01px;
+    cursor: pointer;
+    display: inline-block;
+    font-family: inherit;
+    font-size: 14px;
+    font-variant: normal;
+    font-weight: normal;
+    height: 24px;
+    line-height: 1.42857143;
+    margin: 2;    
+    text-decoration: none;
+    vertical-align: baseline;
+    white-space: nowrap;
+}
