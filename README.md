@@ -17,7 +17,7 @@ FREE and WORKING version of the original Editstrap
 ```
 
 **Other libs needed:**  
-- Bootstrap4 
+- Bootstrap4 (+ jQuery)
 - Font awesome
 
 **Sample working in-edit element:**  
@@ -34,12 +34,10 @@ FREE and WORKING version of the original Editstrap
             emptyField: 'No data',
             displaySuccess:function(editable,value,text){
                 var element = editable.parent().parent().find(".result-message");
-                element.html("Úspěšně synchronizováno");
-                element.addClass('edit-has-succes animated bounceOutLeft'); 
-                element.show().delay(1000).fadeOut();
-            
-            }
-         
+                element.html("Synced");
+                element.addClass('edit-has-succes'); 
+                element.show().delay(1000).fadeOut();            
+            }       
         });
     }); 
 </script>
