@@ -43,6 +43,39 @@ FREE and WORKING version of the original Editstrap
 </script>
 ```
 
+**Note: Due to the original author being a prick unable to write proper docs, this is the way to sync to server:**
+```javascript
+<i id="nameData" class=""></i>
+$(function() {
+    $("#nameData").editstrap({
+        type: 'text',
+        validateClass:'success',
+        saveOptions:'block',
+        title: 'Upravit',
+        editClasses: 'fas fa-check',
+        url: '@Url.Action("ACTION_REPLACE", "CONTROLLER_REPLACE")',         
+        emptyField: 'No data',
+        displaySuccess:function(editable,value,text){
+            var element = editable.parent().parent().find(".result-message");
+            element.html("Úspěšně synchronizováno");
+            element.addClass('edit-has-succes animated bounceOutLeft'); 
+            element.show().delay(1000).fadeOut();
+
+        }
+
+    });
+});
+```
+
+```csharp
+[HttpPost]
+public JsonResult ACTION_REPLACE(string value)
+{
+    // value param contains string needed
+    return Json(new { });
+}
+```
+
 ## Changes VS the original Editstrap:
 - Fully supports Bootstrap4
 - Missing glyphicons are now rendering correctly
